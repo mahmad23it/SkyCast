@@ -1,0 +1,185 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background: linear-gradient(-45deg, #1d2671, #c33764, #3a1c71, #0f0c29);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Section Styling */
+section {
+  padding: 30px 20px;
+  flex: 1;
+}
+
+h1, h2, h3 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Search Box */
+.search-box {
+  text-align: center;
+}
+
+.search-box input {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  width: 250px;
+  max-width: 90%;
+}
+
+.btn-group button {
+  padding: 10px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background: #ff9800;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-group button:hover {
+  background: #e68900;
+}
+
+/* Cards */
+.card {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+/* Forecast Strip */
+.forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.forecast .card {
+  flex: 1 1 120px;
+  max-width: 150px;
+}
+
+/* Contact Page */
+.contact-card {
+  max-width: 700px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+}
+
+.contact-form button {
+  background: #3f83f8;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #2c65d3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar ul {
+    justify-content: center;
+  }
+  .forecast {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar .logo img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%; /* Makes it round */
+  object-fit: cover;
+  border: 2px solid #fff;
+}

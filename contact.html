@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - SkyCast</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="OIP.jpeg">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+  <div class="logo">
+   <div class="logo">🌦 SkyCast</div>
+  </div>
+  <ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="about.html">ℹ️ About Us</a></li>
+    <li><a href="features.html">✨ Features</a></li>
+    <li><a href="contact.html">📩 Contact</a></li>
+    <li><a href="faq.html">❓ FAQ</a></li>
+  </ul>
+</nav>
+
+  <!-- Contact Section -->
+  <section class="page">
+    <div class="card contact-card">
+      <h1>📩 Contact Us</h1>
+      <p>If you have any questions, feedback, or collaboration ideas, feel free to reach out!</p>
+      
+      <!-- Direct Contact Info -->
+      <div class="contact-info">
+        <p>📞 <strong>Phone:</strong> <a href="tel:9797593415">9797593415</a></p>
+        <p>📧 <strong>Email:</strong> <a href="mailto:mushtaqah187@gmail.com">mushtaqah187@gmail.com</a></p>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form" action="https://formspree.io/f/xovnaowy" method="POST">
+  <label for="name">👤 Name</label>
+  <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+  <label for="email">📧 Email</label>
+  <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+  <label for="message">💬 Message</label>
+  <textarea name="message" id="message" rows="5" placeholder="Type your message..." required></textarea>
+
+  <!-- Hidden field for subject -->
+  <input type="hidden" name="_subject" value="New Contact Form Submission">
+
+  <!-- Hidden field for your phone number -->
+  <input type="hidden" name="phone" value="9797593415">
+
+  <button type="submit">Send Message 🚀</button>
+</form>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>🌦 SkyCast © 2025 | Designed by Er. Mushtaq & Er. Ahtisham Lone</p>
+  </footer>
+</body>
+</html>
